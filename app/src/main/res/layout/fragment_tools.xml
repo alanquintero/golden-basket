@@ -4,11 +4,11 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Home content -->
+    <!-- Tools content -->
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/text_tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_home"
+        android:text="@string/title_tools"
         android:textSize="24sp"/>
 </FrameLayout>

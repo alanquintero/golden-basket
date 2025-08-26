@@ -6,20 +6,32 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.goldenbasket.portfolio.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_charts"
+        android:name="com.goldenbasket.portfolio.ui.charts.ChartsFragment"
+        android:label="@string/title_charts"
+        tools:layout="@layout/fragment_charts" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.goldenbasket.portfolio.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.goldenbasket.portfolio.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_categories"
+        android:name="com.goldenbasket.portfolio.ui.categories.CategoriesFragment"
+        android:label="@string/title_categories"
+        tools:layout="@layout/fragment_categories" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.goldenbasket.portfolio.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_tools"
+        android:name="com.goldenbasket.portfolio.ui.tools.ToolsFragment"
+        android:label="@string/title_tools"
+        tools:layout="@layout/fragment_tools" />
 </navigation>
