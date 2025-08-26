@@ -1,0 +1,48 @@
+# Gradle
+.gradle/
+build/
+
+# Local configuration
+/local.properties
+
+# IntelliJ/Android Studio specific
+.idea/
+*.iml
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# macOS
+.DS_Store
+
+# Android generated files
+app/build/
+captures/
+.externalNativeBuild
+.cxx
+
+# Keystore files (do not share signing keys)
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# NDK
+obj/
+
+# Google Services (if using Firebase)
+google-services.json
+
+# Jetifier cache
+.cache/
+
+# Kotlin/Java compiled files
+*.class
+
+# Test and reports
+test-output/
+
