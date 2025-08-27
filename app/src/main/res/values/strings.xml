@@ -3,6 +3,28 @@
     <string name="title_history">History</string>
     <string name="title_charts">Charts</string>
     <string name="title_home">Overview</string>
-    <string name="title_categories">Categories</string>
     <string name="title_tools">Tools</string>
+
+    <!-- Categories -->
+    <string name="title_categories">Categories</string>
+    <string name="default_group">None</string>
+    <!-- Categories screen -->
+    <string name="category_type">Type</string>
+    <string name="asset">Asset</string>
+    <string name="liability">Liability</string>
+    <string name="category_name">Name</string>
+    <string name="category_color">Color</string>
+    <string name="category_group">Group</string>
+
+    <!-- Group screen -->
+    <string name="group_name">Name</string>
+    <string name="group_color">Color</string>
+
+    <!-- Buttons -->
+    <string name="create_button">+</string>
+    <string name="create_button_description">Create button</string>
+    <string name="edit_button">Edit</string>
+    <string name="delete_button">Delete</string>
+    <string name="save_button">Save</string>
+
 </resources>
