@@ -15,16 +15,25 @@
     <string name="category_name">Name</string>
     <string name="category_color">Color</string>
     <string name="category_group">Group</string>
+    <string name="empty_categories">No categories yet</string>
+    <string name="empty_groups">No groups yet</string>
+    <string name="select_an_option">Select am option</string>
+    <string name="create_category">Create category</string>
+    <string name="create_group">Create group</string>
 
     <!-- Group screen -->
     <string name="group_name">Name</string>
     <string name="group_color">Color</string>
 
     <!-- Buttons -->
-    <string name="create_button">+</string>
+    <string name="plus_create_button">+</string>
+    <string name="create_button">Create</string>
     <string name="create_button_description">Create button</string>
     <string name="edit_button">Edit</string>
     <string name="delete_button">Delete</string>
     <string name="save_button">Save</string>
+
+    <!-- Common -->
+    <string name="cancel">Cancel</string>
 
 </resources>
