@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
+
+    id("org.jlleitschuh.gradle.ktlint") version "11.6.0"
 }
 
 android {
@@ -45,29 +47,45 @@ android {
 }
 
 dependencies {
+    // Compose BOM (manages versions of Compose)
     val composeBom = platform("androidx.compose:compose-bom:2025.08.00")
     implementation(composeBom)
     androidTestImplementation(composeBom)
 
-    implementation(libs.androidx.material3)
+    // Compose UI
+    implementation(libs.androidx.ui)
+    implementation(libs.ui.tooling.preview)
+    debugImplementation(libs.ui.tooling)
 
-    // Android Studio Preview support
-    implementation(libs.androidx.ui.tooling.preview)
-    debugImplementation(libs.androidx.ui.tooling)
+    // Material 3
+    implementation(libs.material3)
 
-    // UI Tests
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    // Navigation Compose
+    implementation(libs.androidx.navigation.compose.v280)
 
+    // Lifecycle
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    // Core
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
+
+    // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.ui.test.junit4)
+    debugImplementation(libs.ui.test.manifest)
+}
+
+ktlint {
+    verbose.set(true)
+    android.set(true)
+    outputToConsole.set(true)
+    ignoreFailures.set(false)
+}
+
+tasks.named("check") {
+    dependsOn("ktlintCheck") // it will run in each build
 }

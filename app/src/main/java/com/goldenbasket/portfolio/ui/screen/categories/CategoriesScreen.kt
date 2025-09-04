@@ -1,4 +1,4 @@
-package com.goldenbasket.portfolio.ui.categories
+package com.goldenbasket.portfolio.ui.screen.categories
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column

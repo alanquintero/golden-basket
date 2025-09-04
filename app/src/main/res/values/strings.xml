@@ -1,9 +1,19 @@
 <resources>
     <string name="app_name">Golden Basket</string>
-    <string name="title_history">History</string>
-    <string name="title_charts">Charts</string>
-    <string name="title_home">Overview</string>
-    <string name="title_tools">Tools</string>
+
+    <!-- Screen titles -->
+    <string name="history_title">History</string>
+    <string name="charts_title">Charts</string>
+    <string name="home_title">Home</string>
+    <string name="categories_title">Categories</string>
+    <string name="tools_title">Tools</string>
+
+    <!-- Screen ids -->
+    <string name="screen_history">history</string>
+    <string name="screen_charts">charts</string>
+    <string name="screen_home">home</string>
+    <string name="screen_categories">categories</string>
+    <string name="screen_tools">tools</string>
 
     <!-- Categories -->
     <string name="title_categories">Categories</string>
